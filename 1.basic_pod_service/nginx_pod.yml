@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-nginx
+  namespace: jykim-ns
+  # labels는 service의 라우팅 대상이 되는 이름
+  # sevice의 selector.app을 통해 매핑
+  labels:
+    app: my-nginx
+spec:
+  containers:
+  - name: my-nginx
+    image: nginx
+    ports:
+    # 서비스의 타켓포트와 동일해야한다
+    - containerPort: 80
