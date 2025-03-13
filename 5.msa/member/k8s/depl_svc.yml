@@ -4,7 +4,7 @@ metadata:
   name: jy-msa-member-depl
   namespace: jykim-ns
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: jy-msa-member
