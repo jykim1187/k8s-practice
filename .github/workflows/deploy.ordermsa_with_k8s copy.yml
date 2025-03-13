@@ -78,4 +78,4 @@ jobs:
       - name: eks kubectl apply
         run: |
           kubectl apply -f ./5.msa/product/k8s/depl_svc.yml
-          kubectl rollout restart deployment jy-product-depl -n jykim-ns        
+          kubectl rollout restart deployment jy-msa-product-depl -n jykim-ns        
